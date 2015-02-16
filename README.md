@@ -4,6 +4,18 @@ A new data structure compatible with java.util.List and can be used to stream da
 
 Example:
 
+Java 8:
+
+    ConcurrentTimelyBufferedArrayList<String> list = new ConcurrentTimelyBufferedArrayList<>(10,
+                buffered -> System.out.println(buffered.toString())
+                );
+        
+    list.add("1");
+    list.add("2");
+    list.add("3");
+
+Other Java Versions:
+
     ConcurrentTimelyBufferedArrayList<String> list = new ConcurrentTimelyBufferedArrayList<>(10,
                     new BufferedListener<String>() {
                         @Override
