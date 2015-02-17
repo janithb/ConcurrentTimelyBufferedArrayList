@@ -6,7 +6,7 @@ Example:
 
 Java 8:
 
-    ConcurrentTimelyBufferedArrayList<String> list = new ConcurrentTimelyBufferedArrayList<>(10,
+    List<String> list = new ConcurrentTimelyBufferedArrayList<>(10,
                 buffered -> System.out.println(buffered.toString())
                 );
         
@@ -16,7 +16,7 @@ Java 8:
 
 Other Java Versions:
 
-    ConcurrentTimelyBufferedArrayList<String> list = new ConcurrentTimelyBufferedArrayList<>(10,
+    List<String> list = new ConcurrentTimelyBufferedArrayList<>(10,
                     new BufferedListener<String>() {
                         @Override
                         public void accept(List<String> buffered) {
