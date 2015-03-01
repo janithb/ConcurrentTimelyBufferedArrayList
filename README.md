@@ -13,6 +13,9 @@ Java 8:
     list.add("1");
     list.add("2");
     list.add("3");
+    ....
+    ....
+    list.close();
 
 Other Java Versions:
 
@@ -27,4 +30,7 @@ Other Java Versions:
     list.add("1");
     list.add("2");
     list.add("3");
+    ....
+    ....
+    list.close();
 
